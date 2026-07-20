@@ -1,4 +1,4 @@
-# Wyze-style Bundle Builder
+# Bundle Builder
 
 A React prototype of a multi-step security-system bundle builder with a live
 review panel, built from a provided Figma / screenshots.
@@ -12,7 +12,7 @@ npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`).
+Open the URL Vite prints (usually `https://github.com/Eslam8078/bundle-builder`).
 
 Production build:
 
