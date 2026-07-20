@@ -1,0 +1,121 @@
+.accordion {
+  background: var(--white);
+  border: 1px solid var(--ink-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  order: 1;
+}
+
+.step + .step {
+  border-top: 1px solid var(--ink-200);
+}
+
+/* The <h3> wrapping the trigger button (WAI-ARIA accordion pattern) must
+   not introduce the browser's default heading margin. */
+.step__heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.step__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.step__header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink-400);
+}
+
+.step__title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step__icon {
+  color: var(--purple-600);
+  flex-shrink: 0;
+}
+
+.step__title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.step__header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.step__count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple-600);
+  white-space: nowrap;
+}
+
+.step__chevron {
+  color: var(--purple-600);
+  font-size: 13px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.step__chevron.up {
+  transform: rotate(180deg);
+}
+
+.step__body {
+  padding: 4px 24px 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.step__next {
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .step__header {
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+
+  .step__title {
+    font-size: 16px;
+  }
+
+  .step__body {
+    padding: 4px 16px 22px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

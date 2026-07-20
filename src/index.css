@@ -1,0 +1,9 @@
+/* Entry stylesheet - imports each modular file. Split by concern instead of
+   one large file so a change to (say) the review panel doesn't require
+   scanning accordion or product-card rules to avoid collisions. */
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/layout.css';
+@import './styles/accordion.css';
+@import './styles/product-card.css';
+@import './styles/review-panel.css';
